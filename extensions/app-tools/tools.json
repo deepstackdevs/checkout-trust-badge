@@ -1,0 +1,21 @@
+[
+  {
+    "$schema": "https://extensions.shopifycdn.com/shopifycloud/schemas/v1/tool.json",
+    "name": "get_trust_badge_image",
+    "description": "Get the checkout trust badge image currently configured by the merchant",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "imageUrl": {
+          "type": ["string", "null"],
+          "description": "Public URL of the checkout trust badge image, or null if none is uploaded"
+        }
+      }
+    }
+  }
+]
